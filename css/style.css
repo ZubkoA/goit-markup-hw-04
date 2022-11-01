@@ -197,6 +197,18 @@ header .logo {
 .list .text {
   flex-basis: calc((100% - 90px) / 4);
 }
+.icons-container {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.feature-icons {
+  width: 70px;
+  height: 70px;
+}
 
 .feature-titles {
   margin-bottom: 10px;
