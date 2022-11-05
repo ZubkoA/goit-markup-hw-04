@@ -180,7 +180,8 @@ header .logo {
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
-  width: 1600px;
+  max-width: 1600px;
+  height: 600px;
 }
 .start-title {
   max-width: 696px;
@@ -391,16 +392,16 @@ header .logo {
 
 /*Footer styles*/
 footer {
-  display: flex;
-  background-color: var(--footer-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-color);
 }
 footer .container {
   display: flex;
+  align-items: baseline;
 }
 .footer-container {
   margin-right: 70px;
