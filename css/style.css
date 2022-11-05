@@ -10,6 +10,7 @@
   --footer-color: #2f303a;
   --background-color: #f5f4fa;
   --icon-color: #afb1b8;
+  --border-color: #eeeeee;
 }
 body {
   font-family: "Roboto", "Raleway", "Tahoma", san-serif;
@@ -534,9 +535,9 @@ footer .icons-svg {
 }
 .portfolio-text {
   padding: 20px 0 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid#eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 .main-items:hover,
 .main-items:focus {
