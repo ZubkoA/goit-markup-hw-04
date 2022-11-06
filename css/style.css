@@ -131,7 +131,9 @@ header .logo {
   margin-right: 10px;
   fill: currentColor;
 }
-.header-mail {
+.header-connection {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -141,26 +143,6 @@ header .logo {
 .header-mail:focus {
   color: var(--accent-color);
 }
-
-/* .header-mail:hover svg,
-.header-mail:focus svg {
-  fill: var(--accent-color);
-} */
-
-.header-tel {
-  font-weight: 500;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: var(--second-color);
-}
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-color);
-}
-/* .header-tel:hover svg,
-.header-tel:focus svg {
-  fill: var(--accent-color);
-} */
 
 .accent:visited {
   color: var(--accent-color);
@@ -378,6 +360,7 @@ header .logo {
   justify-content: center;
   align-items: center;
   border: 1px solid var(--icon-color);
+  border-radius: 4px;
   width: 100%;
   height: 100%;
 }
