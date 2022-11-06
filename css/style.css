@@ -97,6 +97,7 @@ header .container {
 .list-contact {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 .header-list-item {
   padding-top: 32px;
@@ -128,7 +129,7 @@ header .logo {
 
 .list-contact svg {
   margin-right: 10px;
-  fill: var(--second-color);
+  fill: currentColor;
 }
 .header-mail {
   font-weight: 500;
@@ -141,10 +142,10 @@ header .logo {
   color: var(--accent-color);
 }
 
-.header-mail:hover svg,
+/* .header-mail:hover svg,
 .header-mail:focus svg {
   fill: var(--accent-color);
-}
+} */
 
 .header-tel {
   font-weight: 500;
@@ -156,10 +157,10 @@ header .logo {
 .header-tel:focus {
   color: var(--accent-color);
 }
-.header-tel:hover svg,
+/* .header-tel:hover svg,
 .header-tel:focus svg {
   fill: var(--accent-color);
-}
+} */
 
 .accent:visited {
   color: var(--accent-color);
@@ -231,7 +232,9 @@ header .logo {
   flex-basis: calc((100% - 90px) / 4);
 }
 .icons-container {
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
@@ -368,13 +371,13 @@ header .logo {
 .clients-items {
   width: 170px;
   height: 92px;
-  border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
 .link-nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid var(--icon-color);
   width: 100%;
   height: 100%;
 }
@@ -482,8 +485,14 @@ footer .icons-svg {
   padding-bottom: 94px;
 }
 .portfolio-link {
+  display: block;
   color: inherit;
   font-family: inherit;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-list {
@@ -539,9 +548,4 @@ footer .icons-svg {
   border-right: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
-}
-.main-items:hover,
-.main-items:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
